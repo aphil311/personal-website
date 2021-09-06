@@ -23,6 +23,7 @@ html {
 .shaded {
     background-color: rgba(32, 49, 56, .85);
     padding: 2vw;
+    border-radius: 5px;
 }
 
 .chonker {
@@ -131,10 +132,6 @@ a:link {
 
 .mobile {
     text-align: center;
-}
-
-#bottom-links a {
-    color: white;
 }
 
 ::-webkit-scrollbar {
