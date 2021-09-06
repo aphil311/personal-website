@@ -1,6 +1,15 @@
 html {
     scrollbar-color: #C9D0D8 rgb(110, 110, 110);
-    background-color: #95ACBD;
+    background-color: #37474F;
+}
+
+.outside {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.inside {
+    scroll-snap-align: start;
 }
 
 .jumbotron{
@@ -16,12 +25,35 @@ html {
     padding: 2vw;
 }
 
+.chonker {
+    margin-left: 38px;
+    margin-right: 38px;
+    border-radius: 1.5vw;
+}
+
+#left-col {
+    margin-left: 76px;
+}
+
+#right-col {
+    margin-right: 76px;
+}
+
 #tiny-hero {
     height: 100vh;
 }
 
+#about-me {
+    background-image: url("../assets/about-me-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+}
+
 #tiny-hero h3 {
     font-size: 20px;
+    text-align: center;
 }
 
 .vert-mid {
@@ -36,7 +68,7 @@ html {
     overflow: hidden;
 }
 
-#title-text {
+h1 {
     color: #DCC3B9;
     font-size:calc(24px + 2.5vw);
     font-family: 'Roboto Mono', monospace;
@@ -46,6 +78,30 @@ h3 {
     color: #C9D0D8;
     font-size: 1.75vw;
     font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color: #889C85;
+    font-size:calc(16px + 1vw);
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+p {
+    color: #FEF9F6;
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(12px + .5vw);
+}
+
+#profile-picture {
+    border-radius: 50%;
+    width: 8vw;
+}
+
+th, td {
+    font-family: 'Roboto', sans-serif;
+    color: #FEF9F6;
+    font-size: calc(12px + .5vw);
 }
 
 a {
@@ -65,7 +121,7 @@ a:link {
   
   a:hover {
     text-decoration: underline;
-    color: #14282F;
+    color: #7FAA76;
   }
   
   a:active {
@@ -73,15 +129,19 @@ a:link {
     color: #7FAA76;
   }
 
+.mobile {
+    text-align: center;
+}
+
+#bottom-links a {
+    color: white;
+}
 
 ::-webkit-scrollbar {
     /* width */
     width: 12px;
 }
 
-.col {
-    margin-right: 0pt;
-}
 
 ::-webkit-scrollbar-track {
     /* Track */
