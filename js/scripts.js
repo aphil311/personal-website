@@ -25,7 +25,7 @@ $(document).ready(function(){
         }
     }
 
-    $("#subtitle").append("I'm Aidan Phillips, a first-year computer science student at Princeton University.");
-    $("#subtitle").hide().delay(2500).fadeIn(1000);
+     $("#subtitle").append("I'm Aidan Phillips, a first-year computer science student at Princeton University.");
+     $("#subtitle").delay(2500).fadeIn(1000);
 });
 
