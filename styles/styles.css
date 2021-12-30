@@ -112,10 +112,11 @@ a {
     font-family: 'Roboto Mono', monospace;
 }
 
-#table a {
+#table {
     color: #FEF9F6;
     font-family: 'Roboto', sans-serif;
     font-size: calc(12px + .5vw);
+    margin-inline: 0px;
 }
 
 a:link {
