@@ -12,7 +12,7 @@ $(document).ready(function(){
         }
     }
 
-    $("#subtitle").append("I'm Aidan Phillips, a first-year computer science student at Princeton University.");
+    $("#subtitle").append("I'm Aidan Phillips, a second-year computer science student at Princeton University and startup founder.");
     $("#subtitle").hide().delay(2500).fadeIn(1000);
 });
 
