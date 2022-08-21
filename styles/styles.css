@@ -1,170 +1,103 @@
-html {
-    scrollbar-color: #C9D0D8 rgb(110, 110, 110);
-    background-color: #37474F;
+#hero {
+    margin:40px auto;
+    max-width:550px;
 }
 
-.outside {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+.alert {
+    font-family: "Pixelated MS Sans Serif";
 }
 
-.inside {
-    scroll-snap-align: start;
+.myspace-text {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.jumbotron{
-    background-image: url("../assets/backdrop.jpg");
+h5{
+    font-weight: bolder;
+    font-size: 12px;
+    padding-left: 5px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+span {
+    line-height: 1em;
+}
+
+html { 
+    background: url(../assets/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-position: center;
+}
+.alert-img {
+    width: 5em;
+    height: 5em;
 }
 
-.shaded {
-    background-color: rgba(32, 49, 56, .85);
-    padding: 2vw;
-    border-radius: 5px;
+#desc {
+    line-height: .5em;
 }
 
-.chonker {
-    margin-left: 38px;
-    margin-right: 38px;
-    border-radius: 1.5vw;
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 10px;
 }
 
-#left-col {
-    margin-left: 76px;
+#myspace-window {
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 0px;
+    background-color: white;
+}
+#navbar {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#right-col {
-    margin-right: 76px;
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#tiny-hero {
-    height: 100vh;
+#myspace-text {
+    margin: 0;
+    padding: 5px;
 }
 
-#about-me {
-    background-image: url("../assets/about-me-image.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-position: center;
+#aidan-profile {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
 }
 
-#tiny-hero h3 {
-    font-size: 20px;
-    text-align: center;
+#my-img {
+    width: 9em;
+    height: 9em;
 }
 
-.vert-mid {
-    margin-top: 100px;
-    vertical-align: middle;
+h4 {
+    font-size: 11pt;
+    margin-top: 0px;
+    margin-bottom: 3px;
 }
 
-.navbar {
-    position: absolute;
-    top:0px;
-    left:0px;
-    overflow: hidden;
+.myspace-cols {
+    margin: 5px;
 }
 
-h1 {
-    color: #DCC3B9;
-    font-size:calc(24px + 2.5vw);
-    font-family: 'Roboto Mono', monospace;
+#border-bitch {
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightblue;
 }
 
-h3 {
-    color: #C9D0D8;
-    font-size: 1.75vw;
-    font-family: 'Roboto', sans-serif;
-}
-
-h2 {
-    color: #889C85;
-    font-size:calc(16px + 1vw);
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
-}
-
-p {
-    color: #FEF9F6;
-    font-family: 'Roboto', sans-serif;
-    font-size: calc(12px + .5vw);
-}
-
-#profile-picture {
-    border-radius: 50%;
-    width: 8vw;
-}
-
-th, td {
-    font-family: 'Roboto', sans-serif;
-    color: #FEF9F6;
-    font-size: calc(12px + .5vw);
-}
-
-a {
-    color: #14282F;
-    font-size: 22px;
-    margin-inline: 20px;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#table {
-    color: #FEF9F6;
-    font-family: 'Roboto', sans-serif;
-    font-size: calc(12px + .5vw);
-    margin-inline: 0px;
-}
-
-a:link {
-    text-decoration: none;
-  }
-  
-  a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color: #7FAA76;
-  }
-  
-  a:active {
-    text-decoration: underline;
-    color: #7FAA76;
-  }
-
-.mobile {
-    text-align: center;
-}
-
-::-webkit-scrollbar {
-    /* width */
-    width: 12px;
-}
-
-
-::-webkit-scrollbar-track {
-    /* Track */
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-    /* Handle */
-    background: #102D31;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    /* Handle on hover */
-    background: #102D31;
-}
-
-::-webkit-scrollbar-track-piece {
-    /* not handle on */
-    background: #A4B3C5;
+#extended-network {
+    margin: 0;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
 }

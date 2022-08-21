@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
     <title>Aidan Phillips</title>
     <meta name="description" content="Aidan Phillips:">
     <meta name="author" content="Aidan Phillips">
@@ -17,103 +18,93 @@
 
     <link rel="icon" href="assets/logo.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body class="h-100">
-    <nav class="navbar d-none d-sm-block fixed-top d-flex">
-        <div class=row>
-            <div class="col-sm-8">
-                <a href="https://github.com/aphil311" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/aidantphillips/" target="_blank">LinkedIn</a>
-                <a href="assets/resume.pdf" target="_blank">Resume</a>
+<body>
+    <div class="window" id="hero">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                www.myspace.com
             </div>
-            <div class="col-4" style="text-align: right;">
-                <a href="mailto: aidanphillips21@outlook.com">Contact Me!</a>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
             </div>
         </div>
-    </nav>
-    <div class="h-100 outside">
-        <section class="h-100 inside">
-            <div class="jumbotron jumbotron-fluid h-100">
-                <div class="row h-100">
-                    <div class="col-lg-3 col-md-2 col-sm-1 hidden-xs"></div>
-                    <div class="col-lg-6 col-md-8 col-sm-10 col d-none d-sm-block my-auto">
-                        <div class="shaded">
-                            <h1 id="title-text"></h1>
-                            <h3 id="subtitle"></h3>
-                        </div>
-                    </div>
-                    <div class="d-block d-sm-none">
-                        <div class="shaded" id="tiny-hero">
-                            <div style="text-align: center;">
-                                <a class="mobile" style="color:#FEF9F6" href="mailto: aidanphillips21@outlook.com">Contact Me!</a>
-                            </div>
-                            <div class=vert-mid>
-                                <h1 class="mobile" id="title-text">Greetings and salutations.</h1>
-                                <h3 class=mobile id="subtitle">I'm Aidan Phillips, a second-year computer science student at Princeton University and startup founder.</h3>
-                            </div>
-                            <div style="text-align: center; margin-top: 25vh;">
-                                <a class="mobile" style="color: #FEF9F6" href="https://github.com/aphil311">GitHub</a> <br>
-                                <a class="mobile" style="color:#FEF9F6" href="https://www.linkedin.com/in/aidantphillips/">LinkedIn</a> <br>
-                                <a class="mobile" style="color:#FEF9F6" href="assets/resume.pdf" target="_blank">Resume</a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-2 col-sm-1 hidden-xs"></div>
-                </div>
+        <div class="window-body" id="myspace-window">
+            <div id="navbar">
+                <h5 id="myspace-text" style="color: white;">MySpace.com | Home</h5>
+                <h5 id="myspace-text" style="color: white; text-align: right;">Help | Sign Out</h5>
             </div>
-        </section>
-
-        <section class="h-100 inside">
-            <div class="container-fluid h-100" id="about-me">
-                <div class="row h-100">
-                    <div class="col-md-6 my-auto">
-                        <div class="shaded chonker" id="col-left">
-                            <h2>About Me</h2>
-                            <p>
-                            I am a rising sophomore at Princeton University concentrating in Computer Science.
-                            My academic interests lie in computer science theory and applied mathematics, and how they relate to abstract problems in business and finance.
-                            This summer I am based in Chicago working as a business analyst for McKinsey & Company's FUEL practice group focused on startups and fast-growth tech.
-                            In my free time I enjoy hitting the gym, listening to music, cooking, and losing chess games.
-                            </p>
-                            <img src="assets/banner.jpg" style="width: 100px; height: 100px; display: none" alt="banner">
-                            <img src="assets/me.jpg" id="profile-picture" alt="my dumb face">
-                        </div>
-                    </div>
-                    <div class="col-md-6 my-auto">
-                        <div class="shaded chonker" id="col-right">
-                            <h2>Featured Projects</h2>
-                            <table class="table">
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Language</th>
-                                </tr>
-                                <tr>
-                                    <td><a id="table" href="https://github.com/aphil311/cos126-final-connect-four-ai">Connect Four AI</a></td>
-                                    <td>Java with JavaFX</td>
-                                </tr>
-                                <tr>
-                                    <td><a id="table" href="https://github.com/aphil311/machine-learning-classifier">Machine Learning Classifier</a></td>
-                                    <td>Java</td>
-                                </tr>
-                                <tr>
-                                    <td><a id="table" href="https://github.com/aphil311/personal-website">Personal Website</a></td>
-                                    <td>HTML, CSS, & JavaScript</td>
-                                </tr>
-                            </table>
+            <div id="aidan-profile">
+                <div class="myspace-cols">
+                    <h4>Aidan</h4>
+                    <img id="my-img" src="assets/me.jpg" alt="">
+                    <div id="border-bitch">
+                        <h5 style="background-color: lightblue; color: white; margin-top: 0;">Contacting Aidan</h5>
+                        <div class="contact">
+                            <div style="margin: 3px">
+                                <a href="">Email</a> <br>
+                                <a href="">LinkedIn</a>
+                            </div>
+                            <div>
+                                <a href="">GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="myspace-cols">
+                    <center>
+                        <h4 id="extended-network">Aidan is in your extended network</h4>
+                    </center>
+                    <h5 style="background-color: orange; color: red;">Aidan's Blurbs</h5>
+                    <h5 style="color: red;">About me:</h5>
+                    <p style="padding-left: 5px; margin-top: 0;">I am a rising sophomore at Princeton University concentrating in Computer Science. My academic interests lie in computer science theory and applied mathematics, and how they relate to abstract problems in business and finance. This summer I am based in Chicago working as a business analyst for McKinsey & Company's FUEL practice group focused on startups and fast-growth tech. In my free time I enjoy hitting the gym, listening to music, cooking, and losing chess games.</p>
+                </div>
             </div>
-        </section>
+        </div>
     </div>
-    </body>
-    <script src="./js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <div class="window" id="hero">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                aidan_phillips.exe
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h5 class="alert">Do you want to open or save this file?</h5>
+            <!-- inline -->
+            <div class="container">
+                <img class=alert-img src="./assets/pdf.png" alt="">
+                <div id="desc">
+                    <p class="alert">Name: Aidan_Phillips_Resume.pdf</p>
+                    <p class="alert">Type: PDF Document</p>
+                    <p class="alert">From: www.aidanphillips.xyz</p>
+                </div>
+            </div>
+            <center>
+                <div>
+                    <button>Open</button>
+                    <button>Download</button>
+                    <button>About</button>
+                </div>
+            </center>
+            <br>
+            <hr>
+            <div class="container">
+                <img class=alert-img src="./assets/warning.png" alt="">
+                <span>
+                    <p class="alert">Thank you for visiting my website! I'm Aidan Phillips, a second-year computer science student at Princeton University and startup founder. Connect with me on <a href="">LinkedIn</a> or check out my <a href="">GitHub</a> here. <a href="">Contact me.</a></p>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./js/scripts.js"></script>
 </body>
